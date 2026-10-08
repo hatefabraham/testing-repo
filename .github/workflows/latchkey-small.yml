@@ -1,0 +1,12 @@
+name: Latchkey on GH refusal fixture
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  echo:
+    runs-on: latchkey-small
+    timeout-minutes: 5
+    steps:
+      - run: echo "latchkey-on-gh-fixture"
