@@ -1,0 +1,14 @@
+name: Personal fixture
+
+on: push
+
+latchkey:
+  schema: 1
+
+jobs:
+  hello:
+    runs-on: small
+    timeout-minutes: 5
+    steps:
+      - name: Say hello
+        run: echo "latchkey-ci-personal-fixture-ok"
